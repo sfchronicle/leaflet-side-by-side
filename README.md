@@ -5,13 +5,14 @@ A Leaflet control to add a split screen to compare two map overlays.
 *NOTE:* All instances of `getContainer()` have been replaced with `getPane()` to accommodate geoJSON and other leaflet layer types.
 
 Example:
-``` var leftMap = map.createPane('left');
-    var rightMap = map.createPane('right');
+```
+var leftMap = map.createPane('left');
+var rightMap = map.createPane('right');
 
-    var layer1 = L.geoJSON(testGeo, {pane: 'left'}).bindPopup("hey").openPopup().addTo(map);
-    var layer2 = L.geoJSON(testGeo2, {pane: 'right'}).addTo(map);
+var layer1 = L.geoJSON(testGeo, {pane: 'left'}).bindPopup("hey").openPopup().addTo(map);
+var layer2 = L.geoJSON(testGeo2, {pane: 'right'}).addTo(map);
 
-		L.control.sideBySide(layer1, layer2).addTo(map);
+L.control.sideBySide(layer1, layer2).addTo(map);
 ```
 
 ![screencast example](screencast.gif)
