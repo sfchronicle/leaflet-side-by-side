@@ -4,6 +4,12 @@ A Leaflet control to add a split screen to compare two map overlays.
 
 *NOTE:* All instances of `getContainer()` have been replaced with `getPane()` to accommodate geoJSON and other leaflet layer types.
 
+To install:
+`npm i https://github.com/sfchronicle/leaflet-side-by-side.git`
+
+Top of your js:
+`var sideBySide = require('@sfchronicle/leaflet-side-by-side')`
+
 Example:
 ```
 var leftMap = map.createPane('left');
